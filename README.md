@@ -1,4 +1,4 @@
-# nginx_lua_module 是基于 lua-nginx-module-0.10.14 版本。没有luajit
+# ngx_lua_module 是基于 lua-nginx-module-0.10.14 版本。没有luajit
 
 增加 capture_multi 的 不同请求的 可以指定不同header
 
