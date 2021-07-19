@@ -1,11 +1,14 @@
-# ngx_lua_module 是基于 lua-nginx-module-0.10.14 版本。没有luajit
+不会git ，懒得整。直接打包了。
 
-增加 capture_multi 的 不同请求的 可以指定不同header
+这个包 ngx_lua_module 是基于 lua-nginx-module-0.10.14 版本。不基于依赖luaJIT。
+
+主要增加 capture_multi 函数，可以对不同子请求指定不同header
 
 其他用法一样。
+
 例如：
 header_info = {}
-header_info["User-xxxx"]="xxxx/post";
+header_info["User-xxxx"]="xxxx-ddd-ccccc";
 
 table.insert(uri_list, {v.url,{ method = ngx.HTTP_POST,args = query,body=body,header=header_info} })
 
