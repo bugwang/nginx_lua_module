@@ -12,4 +12,5 @@ header_info["User-xxxx"]="xxxx-ddd-ccccc";
 
 table.insert(uri_list, {v.url,{ method = ngx.HTTP_POST,args = query,body=body,header=header_info} })
 
-
+ngx_lua_module 10.14.2 增加了
+sha256 bin2hex hex2bin hmac_sha256
